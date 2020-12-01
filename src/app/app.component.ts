@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jur';
+
+  data = {title: 'Jurgen'};
+
+  onKeyUp(newTitle: string){
+    this.data.title = newTitle;
+  }
 }
